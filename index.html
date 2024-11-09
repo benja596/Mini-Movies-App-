@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Movies App</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #fff;
+    font-family: sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    background-color: rgb(111, 109, 109);
+    padding: 8px;
+  }
+  .h1-color {
+    color: rgb(188, 2, 2);
+    font-size: 2.5em;
+  }
+
+  .navigation {
+    background-color: rgb(65, 64, 64);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: sticky;
+    background-attachment: fixed;
+    z-index: 1;
+    top: 0;
+  }
+
+  .nav_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+
+  .movie-card {
+    align-items: center;
+  }
+
+  .movie-card h2 {
+    text-align: center;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-container img {
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+
+  .card-container img:hover {
+    transform: scale(1.1);
+  }
+
+  .card-container p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  footer {
+    text-align: center;
+    background-color: rgb(111, 109, 109);
+    padding: 8px;
+  }
+</style>
+<body>
+    <div class="header">
+      <h1 class="h1-color">CineWorld</h1>
+      <p>Your gateway to the movie Universel</p>
+    </div>
+
+    <div class="navigation">
+        <a href="#" class="nav_link">Action</a>
+        <a href="#" class="nav_link">Comedy</a>
+        <a href="#" class="nav_link">Drama</a>
+    </div>
+
+    <section class="movie-card">
+      <h2>Action Movies</h2>
+
+      <div class="card-container">
+        <div class="card-1">
+          <img src="Man_of_Steel.webp" alt="movie-image">
+          <p>Man of Steel</p>
+        </div>
+
+        <div class="card-2">
+          <img src="avengers.jpg" alt="movie-image">
+          <p>Avengers</p>
+        </div>
+
+        <div class="card-3">
+          <img src="MoonKnight.jpg" alt="movie-image">
+          <p>Moon Knight</p>
+        </div>
+      </div>
+
+      <h2>Drama Movies</h2>
+      <div class="card-container">
+        <div class="card-1">
+          <img src="images (2).jpeg" alt="movie-image">
+          <p>IF</p>
+        </div>
+
+        <div class="card-2">
+          <img src="images (2).jpeg" alt="movie-image">
+          <p>IF</p>
+        </div>
+
+        <div class="card-3">
+          <img src="images (2).jpeg" alt="movie-image">
+          <p>IF</p>
+        </div>
+      </div>
+
+      <h2>Comedy Movies</h2>
+      <div class="card-container">
+        <div class="card-1">
+          <img src="norbit.jpg" alt="movie-image">
+          <p>Norbit</p>
+        </div>
+
+        <div class="card-2">
+          <img src="norbit.jpg" alt="movie-image">
+          <p>Norbit</p>
+        </div>
+
+        <div class="card-3">
+          <img src="norbit.jpg" alt="movie-image">
+          <p>Norbit</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2024 CineWorld</p>
+    </footer>
+</body>
+</html>
